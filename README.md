@@ -43,52 +43,12 @@ waveform shape/thickness/count, and a frame-rate control for GPU usage.
 the glow active around the edges shows it off best.)*
 
 ## Download
-
-**Option A — Portable, no install:**
-Grab the published `AuraWin.exe` from the [Releases](../../releases) page (or build
-it yourself, see below) and just run it. It's fully self-contained — no other files
-needed, no .NET runtime install required.
-
-**Option B — Installer:**
-If a release includes `AuraWinSetup.exe`, running it installs AuraWin into Program
+Download `AuraWinSetup.exe`, running it installs AuraWin into Program
 Files with a Start Menu entry and a proper uninstaller, like any normal Windows app.
 
 ## Requirements
 
 - Windows 10 (build 19041+) or Windows 11
-- To build from source: [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-  and, optionally, Visual Studio 2022 with the **.NET desktop development** workload
-
-## Building from source
-
-```powershell
-git clone <this-repo-url>
-cd AuraWin
-dotnet restore
-dotnet build -c Release
-```
-
-To run it directly:
-```powershell
-cd AuraWin
-dotnet run -c Release
-```
-
-To produce a single standalone `.exe` (self-contained, no install/runtime required):
-```powershell
-cd AuraWin
-dotnet publish -c Release -p:PublishProfile=FolderProfile
-```
-The exe lands at:
-```
-AuraWin\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\AuraWin.exe
-```
-
-To build a proper installer (Program Files, Start Menu shortcut, uninstaller entry):
-1. Install [Inno Setup](https://jrsoftware.org/isdl.php) (free).
-2. Publish first (previous step).
-3. Open `installer/AuraWin.iss` in the Inno Setup Compiler and press **Ctrl+F9**.
-4. The installer appears at `installer/Output/AuraWinSetup.exe`.
 
 On first launch, Windows will ask permission for AuraWin to read media session info
 — this is what lets it see the current track and album art. It never accesses your
