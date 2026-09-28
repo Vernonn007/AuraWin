@@ -8,10 +8,9 @@ Inspired by [Lumn](https://www.trylumn.xyz/) for macOS, rebuilt for Windows with
 customization: independent bass/mid-high reactivity, multiple color modes, adjustable
 waveform shape/thickness/count, and a frame-rate control for GPU usage.
 
-<p align="center">
-  <img src="assets/AuraWin.gif" width="49%">
-  <img src="assets/AuraWin2.gif" width="49%">
-</p>
+![AuraWin Demo](assets/AuraWin.gif)
+
+![AuraWin Demo](assets/AuraWin2.gif)
 
 ## Features
 
