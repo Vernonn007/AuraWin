@@ -8,6 +8,9 @@ Inspired by [Lumn](https://www.trylumn.xyz/) for macOS, rebuilt for Windows with
 customization: independent bass/mid-high reactivity, multiple color modes, adjustable
 waveform shape/thickness/count, and a frame-rate control for GPU usage.
 
+![AuraWin Demo](assets/AuraWin.gif)
+
+
 ## Features
 
 - **Always-on, click-through overlay** — sits on top of every app without blocking
