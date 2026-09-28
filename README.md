@@ -37,11 +37,6 @@ waveform shape/thickness/count, and a frame-rate control for GPU usage.
 - **System tray** — quick access to Settings, a debug/diagnostics overlay toggle,
   and Quit.
 
-## Screenshots
-
-*(Add a screenshot or short clip here once you've got one — a dark desktop with
-the glow active around the edges shows it off best.)*
-
 ## Download
 Download `AuraWinSetup.exe`, running it installs AuraWin into Program
 Files with a Start Menu entry and a proper uninstaller, like any normal Windows app.
@@ -119,27 +114,6 @@ Settings are saved automatically to `%AppData%\AuraWin\settings.json`.
   virtual desktop, borderless and transparent; `Overlay/NativeMethods.cs` applies
   the Win32 extended styles (`WS_EX_TRANSPARENT | WS_EX_LAYERED | WS_EX_TOOLWINDOW`)
   that make it click-through and hidden from the taskbar/Alt+Tab.
-
-## Project layout
-
-```
-AuraWin/
-  AuraWin.sln
-  AuraWin/
-    App.xaml(.cs)                     tray icon + wires everything together
-    Models/AuraSettings.cs            settings model + JSON persistence
-    Services/
-      MediaSessionService.cs          SMTC now-playing + album art
-      AudioLevelService.cs            WASAPI loopback capture, bass/mid-high bands
-      ColorExtractor.cs               album art -> vivid color palette
-    Overlay/
-      OverlayWindow.xaml(.cs)         the click-through, full-desktop host window
-      EdgeGlowCanvas.cs               the actual rendered glow
-      NativeMethods.cs                click-through / topmost Win32 interop
-    Settings/SettingsWindow.xaml(.cs) tray-accessible customization panel
-    Properties/PublishProfiles/       self-contained single-file publish config
-  installer/AuraWin.iss               Inno Setup script for a real installer
-```
 
 ## Roadmap / known limitations
 
