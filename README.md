@@ -9,7 +9,7 @@ customization: independent bass/mid-high reactivity, multiple color modes, adjus
 waveform shape/thickness/count, and a frame-rate control for GPU usage.
 
 ![AuraWin Demo](assets/AuraWin.gif)
-
+![AuraWin Demo](assets/AuraWin2.gif)
 
 ## Features
 
