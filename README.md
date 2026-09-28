@@ -10,7 +10,6 @@ waveform shape/thickness/count, and a frame-rate control for GPU usage.
 
 <p align="center">
   <img src="assets/AuraWin.gif" width="49%">
-  
   <img src="assets/AuraWin2.gif" width="49%">
 </p>
 
